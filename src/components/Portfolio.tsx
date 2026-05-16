@@ -3,7 +3,7 @@ import { TrendingUp, TrendingDown, DollarSign } from 'lucide-react'
 const portfolioData = [
   {
     id: 1,
-    name: '科技股基金',
+    name: 'Dana Saham Teknologi',
     symbol: 'TECH',
     value: 45600,
     change: 12.5,
@@ -12,7 +12,7 @@ const portfolioData = [
   },
   {
     id: 2,
-    name: '消费品指数',
+    name: 'Indeks Barangan Pengguna',
     symbol: 'CONS',
     value: 28400,
     change: 8.2,
@@ -21,7 +21,7 @@ const portfolioData = [
   },
   {
     id: 3,
-    name: '医疗健康',
+    name: 'Kesihatan dan Perubatan',
     symbol: 'HEALTH',
     value: 31200,
     change: 6.8,
@@ -30,7 +30,7 @@ const portfolioData = [
   },
   {
     id: 4,
-    name: '房地产投资',
+    name: 'Pelaburan Hartanah',
     symbol: 'REAL',
     value: 24800,
     change: -2.5,
@@ -48,37 +48,37 @@ function Portfolio() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">我的投资组合</h2>
-          <p className="text-gray-400 text-lg">实时追踪您的投资表现和资产分配</p>
+          <h2 className="text-4xl font-bold text-white mb-4">Portfolio Pelaburan Saya</h2>
+          <p className="text-gray-400 text-lg">Pantau prestasi pelaburan dan peruntukan aset anda secara masa nyata</p>
         </div>
 
         {/* Summary Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="p-8 bg-gradient-to-br from-blue-600/20 to-blue-700/20 border border-blue-500/30 rounded-2xl">
             <div className="flex items-center justify-between mb-4">
-              <p className="text-gray-400 font-semibold">总资产</p>
+              <p className="text-gray-400 font-semibold">Jumlah Aset</p>
               <DollarSign className="text-amber-400" size={24} />
             </div>
             <p className="text-4xl font-bold text-white">${(totalValue / 1000).toFixed(1)}K</p>
-            <p className="text-gray-400 text-sm mt-2">所有投资总计</p>
+            <p className="text-gray-400 text-sm mt-2">Jumlah keseluruhan pelaburan</p>
           </div>
 
           <div className="p-8 bg-gradient-to-br from-green-600/20 to-green-700/20 border border-green-500/30 rounded-2xl">
             <div className="flex items-center justify-between mb-4">
-              <p className="text-gray-400 font-semibold">平均收益</p>
+              <p className="text-gray-400 font-semibold">Purata Pulangan</p>
               <TrendingUp className="text-green-400" size={24} />
             </div>
             <p className="text-4xl font-bold text-white">{totalChange.toFixed(1)}%</p>
-            <p className="text-gray-400 text-sm mt-2">过去30天</p>
+            <p className="text-gray-400 text-sm mt-2">Dalam 30 hari lalu</p>
           </div>
 
           <div className="p-8 bg-gradient-to-br from-purple-600/20 to-purple-700/20 border border-purple-500/30 rounded-2xl">
             <div className="flex items-center justify-between mb-4">
-              <p className="text-gray-400 font-semibold">投资笔数</p>
+              <p className="text-gray-400 font-semibold">Bilangan Pelaburan</p>
               <DollarSign className="text-purple-400" size={24} />
             </div>
             <p className="text-4xl font-bold text-white">{portfolioData.length}</p>
-            <p className="text-gray-400 text-sm mt-2">个不同资产</p>
+            <p className="text-gray-400 text-sm mt-2">Aset yang berbeza</p>
           </div>
         </div>
 
@@ -111,7 +111,7 @@ function Portfolio() {
 
               <div>
                 <div className="flex justify-between mb-2">
-                  <p className="text-gray-400 text-sm">资产配置</p>
+                  <p className="text-gray-400 text-sm">Peruntukan Aset</p>
                   <p className="text-white font-semibold">{item.allocation}%</p>
                 </div>
                 <div className="w-full bg-slate-700/50 rounded-full h-2">

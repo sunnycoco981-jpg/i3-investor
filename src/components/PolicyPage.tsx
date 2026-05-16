@@ -6,8 +6,8 @@ function PolicyPage() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">政策和条款</h1>
-          <p className="text-gray-400 text-lg">了解我们的服务政策和用户协议</p>
+          <h1 className="text-4xl font-bold text-white mb-4">Dasar dan Syarat-Syarat</h1>
+          <p className="text-gray-400 text-lg">Memahami dasar perkhidmatan kami dan perjanjian pengguna</p>
         </div>
 
         {/* Policy Sections */}
@@ -19,15 +19,15 @@ function PolicyPage() {
                 <Shield className="text-blue-400" size={24} />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white mb-4">用户隐私保护</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">Perlindungan Privasi Pengguna</h2>
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                  i3 Investor 平台致力于保护用户的隐私和个人信息。我们采用行业领先的加密技术和安全措施，确保您的数据安全。我们不会未经授权向第三方披露您的个人信息，除非法律要求。
+                  Platform i3 Investor berkomitmen untuk melindungi privasi dan maklumat peribadi pengguna. Kami menggunakan teknologi enkripsi terkemuka dalam industri dan langkah-langkah keselamatan untuk memastikan keselamatan data anda. Kami tidak akan mendedahkan maklumat peribadi anda kepada pihak ketiga tanpa kebenaran anda, kecuali diwajibkan oleh undang-undang.
                 </p>
                 <ul className="space-y-2 text-gray-300">
-                  <li>✓ 银行级 256-bit 加密</li>
-                  <li>✓ 定期安全审计和更新</li>
-                  <li>✓ GDPR 和相关法规合规</li>
-                  <li>✓ 专业隐私团队维护</li>
+                  <li>✓ Enkripsi 256-bit peringkat bank</li>
+                  <li>✓ Audit keselamatan berkala dan pembaruan</li>
+                  <li>✓ Pematuhan dengan peraturan PDPA</li>
+                  <li>✓ Pasukan privasi profesional berdedikasi</li>
                 </ul>
               </div>
             </div>
@@ -40,15 +40,15 @@ function PolicyPage() {
                 <FileText className="text-green-400" size={24} />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white mb-4">服务条款</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">Syarat-Syarat Perkhidmatan</h2>
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                  通过使用 i3 Investor 平台，您同意遵守本服务条款。我们提供的服务包括投资管理、数据分析和财务建议等功能。用户需要为其账户活动负责，并确保提供准确的信息。
+                  Dengan menggunakan platform i3 Investor, anda bersetuju untuk mematuhi syarat perkhidmatan ini. Perkhidmatan yang kami sediakan termasuk pengurusan pelaburan, analisis data, dan nasihat kewangan. Pengguna bertanggungjawab untuk aktiviti akaun mereka dan mesti memastikan semua maklumat yang diberikan adalah tepat dan sah.
                 </p>
                 <ul className="space-y-2 text-gray-300">
-                  <li>✓ 18岁以上用户可使用</li>
-                  <li>✓ 禁止非法活动和欺诈</li>
-                  <li>✓ 用户内容所有权保留</li>
-                  <li>✓ 违规账户将被冻结</li>
+                  <li>✓ Pengguna berusia 18 tahun ke atas boleh menggunakan</li>
+                  <li>✓ Larangan aktiviti haram dan penipuan</li>
+                  <li>✓ Hak milik penuh terhadap kandungan pengguna</li>
+                  <li>✓ Akaun yang melanggar akan dibekukan</li>
                 </ul>
               </div>
             </div>
@@ -61,15 +61,15 @@ function PolicyPage() {
                 <Lock className="text-amber-400" size={24} />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white mb-4">数据安全和合规</h2>
+                <h2 className="text-2xl font-bold text-white mb-4">Keselamatan Data dan Pematuhan</h2>
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                  我们遵循最严格的数据保护标准和金融规范。所有用户数据存储在受保护的服务器上，采用多层防御策略。我们定期进行安全评估和渗透测试。
+                  Kami mematuhi piawaian perlindungan data yang paling ketat dan peraturan kewangan. Semua data pengguna disimpan di pelayan yang dilindungi, menggunakan strategi pertahanan berlapis. Kami melakukan penilaian keselamatan berkala dan ujian penembusan untuk mengenal pasti dan membetulkan sebarang kerentanan.
                 </p>
                 <ul className="space-y-2 text-gray-300">
-                  <li>✓ ISO 27001 认证</li>
-                  <li>✓ 双因素认证支持</li>
-                  <li>✓ 实时监控和告警系统</li>
-                  <li>✓ 定期备份和灾难恢复</li>
+                  <li>✓ Pensijilan ISO 27001</li>
+                  <li>✓ Sokongan pengesahan dua faktor</li>
+                  <li>✓ Sistem pemantauan dan amaran masa nyata</li>
+                  <li>✓ Sandaran berkala dan pemulihan bencana</li>
                 </ul>
               </div>
             </div>
@@ -78,16 +78,16 @@ function PolicyPage() {
 
         {/* Additional Info */}
         <div className="mt-12 p-8 bg-blue-500/10 border border-blue-500/30 rounded-xl">
-          <h3 className="text-xl font-bold text-white mb-4">免责声明</h3>
+          <h3 className="text-xl font-bold text-white mb-4">Penafian</h3>
           <p className="text-gray-300 leading-relaxed">
-            i3 Investor 平台提供的投资建议和分析仅供参考，不构成金融建议。投资涉及风险，过去的表现不能保证未来的结果。在做出投资决定前，请咨询专业的财务顾问。我们不对因使用本平台而产生的任何损失或损害承担责任。
+            Nasihat pelaburan dan analisis yang disediakan oleh platform i3 Investor adalah untuk tujuan rujukan sahaja, bukan nasihat kewangan. Pelaburan melibatkan risiko, dan prestasi masa lalu tidak menjamin hasil masa depan. Sebelum membuat keputusan pelaburan, sila berunding dengan penasihat kewangan profesional. Kami tidak bertanggungjawab atas sebarang kerugian atau kerosakan yang timbul daripada penggunaan platform ini.
           </p>
         </div>
 
         {/* CTA */}
         <div className="mt-12 text-center">
           <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-amber-500 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition">
-            同意并继续
+            Setuju dan Lanjutkan
           </button>
         </div>
       </div>

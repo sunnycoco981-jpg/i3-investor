@@ -17,7 +17,7 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">i3 Investor</h1>
-              <p className="text-xs text-blue-300">Smart Wealth</p>
+              <p className="text-xs text-blue-300">Kekayaan Pintar</p>
             </div>
           </div>
 
@@ -31,7 +31,7 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
                   : 'text-gray-300 hover:text-white'
               }`}
             >
-              首页
+              Halaman Utama
             </button>
             <button
               onClick={() => setCurrentPage('dashboard')}
@@ -41,7 +41,7 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
                   : 'text-gray-300 hover:text-white'
               }`}
             >
-              仪表板
+              Papan Pemantau
             </button>
             <button
               onClick={() => setCurrentPage('policy')}
@@ -51,13 +51,13 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
                   : 'text-gray-300 hover:text-white'
               }`}
             >
-              政策
+              Dasar
             </button>
           </nav>
 
           {/* CTA Button */}
           <button className="hidden md:block px-6 py-2 bg-gradient-to-r from-blue-500 to-amber-500 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition">
-            登录
+            Log Masuk
           </button>
         </div>
       </div>

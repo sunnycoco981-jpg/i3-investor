@@ -11,10 +11,10 @@ const chartData = [
 ]
 
 const allocationData = [
-  { name: '科技股', value: 35 },
-  { name: '消费品', value: 22 },
-  { name: '医疗', value: 24 },
-  { name: '房地产', value: 19 },
+  { name: 'Saham Teknologi', value: 35 },
+  { name: 'Barangan Pengguna', value: 22 },
+  { name: 'Perubatan', value: 24 },
+  { name: 'Hartanah', value: 19 },
 ]
 
 const COLORS = ['#0ea5e9', '#f59e0b', '#10b981', '#8b5cf6']
@@ -23,39 +23,39 @@ function Dashboard() {
   return (
     <div className="pt-20 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-12 mt-12">投资仪表板</h1>
+        <h1 className="text-4xl font-bold text-white mb-12 mt-12">Papan Pemantau Pelaburan</h1>
 
         {/* KPI Cards */}
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           <div className="p-6 bg-gradient-to-br from-blue-600/20 to-blue-700/20 border border-blue-500/30 rounded-xl">
-            <p className="text-gray-400 text-sm font-semibold mb-2">总资产</p>
+            <p className="text-gray-400 text-sm font-semibold mb-2">Jumlah Aset</p>
             <p className="text-3xl font-bold text-white mb-2">$130.2K</p>
             <div className="flex items-center gap-1 text-green-400 text-sm">
-              <ArrowUp size={16} /> +12.5% 本月
+              <ArrowUp size={16} /> +12.5% bulan ini
             </div>
           </div>
 
           <div className="p-6 bg-gradient-to-br from-green-600/20 to-green-700/20 border border-green-500/30 rounded-xl">
-            <p className="text-gray-400 text-sm font-semibold mb-2">月度收益</p>
+            <p className="text-gray-400 text-sm font-semibold mb-2">Pendapatan Bulanan</p>
             <p className="text-3xl font-bold text-white mb-2">$4.8K</p>
             <div className="flex items-center gap-1 text-green-400 text-sm">
-              <ArrowUp size={16} /> +8.3% 环比
+              <ArrowUp size={16} /> +8.3% berbanding bulan lalu
             </div>
           </div>
 
           <div className="p-6 bg-gradient-to-br from-amber-600/20 to-amber-700/20 border border-amber-500/30 rounded-xl">
-            <p className="text-gray-400 text-sm font-semibold mb-2">年度收益率</p>
+            <p className="text-gray-400 text-sm font-semibold mb-2">Kadar Pulangan Tahunan</p>
             <p className="text-3xl font-bold text-white mb-2">18.7%</p>
             <div className="flex items-center gap-1 text-green-400 text-sm">
-              <ArrowUp size={16} /> 超目标 2.1%
+              <ArrowUp size={16} /> Lebih tinggi daripada sasaran 2.1%
             </div>
           </div>
 
           <div className="p-6 bg-gradient-to-br from-purple-600/20 to-purple-700/20 border border-purple-500/30 rounded-xl">
-            <p className="text-gray-400 text-sm font-semibold mb-2">风险评分</p>
+            <p className="text-gray-400 text-sm font-semibold mb-2">Skor Penilaian Risiko</p>
             <p className="text-3xl font-bold text-white mb-2">42/100</p>
             <div className="flex items-center gap-1 text-blue-400 text-sm">
-              中等风险 - 平衡
+              Risiko Sederhana - Seimbang
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ function Dashboard() {
         <div className="grid lg:grid-cols-3 gap-6 mb-12">
           {/* Line Chart */}
           <div className="lg:col-span-2 p-6 bg-slate-800/50 border border-blue-500/20 rounded-xl">
-            <h3 className="text-xl font-bold text-white mb-6">资产增长趋势</h3>
+            <h3 className="text-xl font-bold text-white mb-6">Arah Aliran Pertumbuhan Aset</h3>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(100, 116, 139, 0.3)" />
@@ -85,7 +85,7 @@ function Dashboard() {
                   stroke="#0ea5e9"
                   strokeWidth={2}
                   dot={{ fill: '#0ea5e9', r: 4 }}
-                  name="总资产"
+                  name="Jumlah Aset"
                 />
                 <Line
                   type="monotone"
@@ -93,7 +93,7 @@ function Dashboard() {
                   stroke="#f59e0b"
                   strokeWidth={2}
                   dot={{ fill: '#f59e0b', r: 4 }}
-                  name="收益"
+                  name="Pendapatan"
                 />
               </LineChart>
             </ResponsiveContainer>
@@ -101,7 +101,7 @@ function Dashboard() {
 
           {/* Pie Chart */}
           <div className="p-6 bg-slate-800/50 border border-blue-500/20 rounded-xl">
-            <h3 className="text-xl font-bold text-white mb-6">资产配置</h3>
+            <h3 className="text-xl font-bold text-white mb-6">Peruntukan Aset</h3>
             <ResponsiveContainer width="100%" height={300}>
               <PieChart>
                 <Pie
@@ -133,7 +133,7 @@ function Dashboard() {
 
         {/* Area Chart */}
         <div className="p-6 bg-slate-800/50 border border-blue-500/20 rounded-xl">
-          <h3 className="text-xl font-bold text-white mb-6">收益分析</h3>
+          <h3 className="text-xl font-bold text-white mb-6">Analisis Pendapatan</h3>
           <ResponsiveContainer width="100%" height={300}>
             <AreaChart data={chartData}>
               <defs>
